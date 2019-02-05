@@ -2,11 +2,14 @@
 
 ## Features
 
+#### dev
+
 - babel + `babel/polyfill`
 - `webpack-dev-server` for live editing
 - loaders for css, files (including images)
 - SASS support
 - CSS autoprefixing with postCSS
+- CSS minification in production with `MiniCssExtractPlugin` and `OptimizeCssAssetsPlugin`
 - eslint
 - JS minification with `Terser` in production mode
 
@@ -15,7 +18,6 @@
 ## Not currently included
 
 - HMR
-- CSS minification
 - tree shaking
 - testing
 
