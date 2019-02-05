@@ -1,8 +1,4 @@
-# a minimal webpack dev environment
-
-## N.B.
-
-This repo is not setup for production. The bundle in dist is still meant for dev only. It is transpiled by babel and put together by webpack but contain sourcemaps and are not minified or anything like that.
+# A minimal webpack setup
 
 ## Features
 
@@ -12,14 +8,14 @@ This repo is not setup for production. The bundle in dist is still meant for dev
 - SASS support
 - CSS autoprefixing with postCSS
 - eslint
+- minification with `Terser` in production mode
 
 - lodash is included, mostly just as an example of importing a package
 
 ## Not currently included
 
-- any setup for production!
 - HMR
-- testing stuff
+- testing
 
 ## Usage
 
@@ -27,4 +23,4 @@ This repo is not setup for production. The bundle in dist is still meant for dev
 - `cd ./webpack-starter`
 - `npm i`
 - `npm start` for live development
-- `npm build` for build src into `dist` directory
+- `npm run build` to build src into `dist` directory
