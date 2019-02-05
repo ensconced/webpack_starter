@@ -2,8 +2,6 @@
 
 ## Features
 
-#### dev
-
 - babel + `babel/polyfill`
 - `webpack-dev-server` for live editing
 - loaders for css, files (including images)
