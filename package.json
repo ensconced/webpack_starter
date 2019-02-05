@@ -2,6 +2,9 @@
   "name": "webpack-boilerplate",
   "browserslist": "> 0.25%, not dead",
   "main": "server/app.js",
+  "engines": {
+    "node": "10.10.0"
+  },
   "babel": {
     "presets": [
       [
