@@ -15,6 +15,7 @@
 ## Not currently included
 
 - HMR
+- tree shaking
 - testing
 
 ## Usage
