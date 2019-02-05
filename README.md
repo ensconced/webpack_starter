@@ -8,13 +8,14 @@
 - SASS support
 - CSS autoprefixing with postCSS
 - eslint
-- minification with `Terser` in production mode
+- JS minification with `Terser` in production mode
 
 - lodash is included, mostly just as an example of importing a package
 
 ## Not currently included
 
 - HMR
+- CSS minification
 - tree shaking
 - testing
 
