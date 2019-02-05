@@ -22,8 +22,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.prod.js",
     "start": "webpack-dev-server --open --config webpack.dev.js",
-    "serve": "nodemon server/app.js"
-},
+    "serve": "node server/app.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
