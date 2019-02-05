@@ -13,7 +13,7 @@
 - eslint
 - JS minification with `Terser` in production mode
 
-- lodash is included, mostly just as an example of importing a package
+- lodash is included, mostly just as an example of importing a package (`npm uninstall` it if you don't need it!)
 
 ## Not currently included
 
