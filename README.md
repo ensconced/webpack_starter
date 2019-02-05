@@ -26,3 +26,12 @@
 - `npm i`
 - `npm start` for live development
 - `npm run build` to build src into `dist` directory
+
+## Deploy to Heroku
+
+- `npm run build`
+- `heroku login`
+- `heroku create`
+- `git add -A`
+- `git commit`
+- `git push heroku master`
