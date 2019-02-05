@@ -28,39 +28,6 @@ module.exports = {
         exclude: /(node_modules|bower_components)/,
         loader: 'babel-loader',
       },
-      {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          { loader: 'css-loader', options: { importLoaders: 1 } },
-          {
-            loader: 'postcss-loader',
-            options: {
-              ident: 'postcss',
-              plugins: () => [
-                postcssPresetEnv(/* pluginOptions */)
-              ],
-            }
-          },
-        ],
-      },
-      {
-        test: /\.scss$/,
-        use: [
-          'style-loader',
-          { loader: 'css-loader', options: { importLoaders: 1 } },
-          {
-            loader: 'postcss-loader',
-            options: {
-              ident: 'postcss',
-              plugins: () => [
-                postcssPresetEnv(/* pluginOptions */)
-              ],
-            }
-          },
-          'sass-loader'
-        ],
-      },
     ]
   },
 };
