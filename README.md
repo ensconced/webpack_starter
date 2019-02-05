@@ -7,8 +7,9 @@ This repo is not setup for production. The bundle in dist is still meant for dev
 ## Features
 
 - babel + `babel/polyfill`
-- `webpack-dev-server` for live editing of src files
+- `webpack-dev-server` for live editing
 - loaders for css, files (including images)
+- SASS support
 - CSS autoprefixing with postCSS
 - eslint
 
@@ -17,7 +18,6 @@ This repo is not setup for production. The bundle in dist is still meant for dev
 ## Not currently included
 
 - any setup for production!
-- support for SASS or LESS etc.
 - HMR
 - testing stuff
 
