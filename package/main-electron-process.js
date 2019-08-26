@@ -1,6 +1,7 @@
 require('dotenv').config();
 const { app, BrowserWindow } = require('electron');
 const http = require('http');
+const path = require('path');
 
 const isDev = process.mainModule.filename.indexOf('app.asar') === -1;
 
@@ -13,7 +14,7 @@ app.on('ready', () => {
   } else {
     // in production, we'll want to load the build index.html
     // using window.loadFile instead...
-    window.loadFile('./built/index.html');
+    window.loadFile(path.resolve(__dirname, 'dist/index.html'));
   }
 });
 

@@ -8,7 +8,7 @@
   "description": "boilerplate app",
   "private": true,
   "scripts": {
-  	"pack": "yarn run build && electron-builder --dir",
+  	"pack": "electron-builder --dir",
     "build": "webpack --config webpack.prod.js",
     "dist": "yarn run build && electron-builder",
     "start:dev": "electron . & yarn start:webpack-dev-server",
@@ -16,12 +16,6 @@
     "rebuild": "electron-rebuild"
   },
   "build": {
-  	"files": [
-      "./main-electron-process.js",
-      "built/**/*",
-      "node_modules/**/*",
-      "package.json"
-    ],
     "appId": "com.electron.boilerplate-app",
     "productName": "Boilerplate App",
     "copyright": "Copyright © 2019 Joe Barnett",
@@ -33,7 +27,7 @@
       "category": "public.app-category.utilities"
     },
     "directories": {
-      "buildResources": "built",
+      "buildResources": "public",
       "output": "dist"
     }
   },
