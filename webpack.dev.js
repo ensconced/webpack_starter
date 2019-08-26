@@ -1,3 +1,4 @@
+require('dotenv').config();
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
 
@@ -8,6 +9,9 @@ const cssLoaders = [
 
 module.exports = merge(common, {
   mode: 'development',
+  devServer: {
+    port: process.env.PORT,
+  },
   devtool: 'eval-source-map',
   module: {
     rules: [
