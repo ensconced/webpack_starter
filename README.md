@@ -1,8 +1,8 @@
-# A minimal webpack setup
+# A minimal for an electron app using webpack
 
 ## Features
 
-- babel + `babel/polyfill`
+- babel
 - `webpack-dev-server` for live editing
 - loaders for css, files (including images)
 - SASS support

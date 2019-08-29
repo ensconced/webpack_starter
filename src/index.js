@@ -1,19 +1,6 @@
-import _ from 'lodash';
-import './style.scss';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App.jsx';
 
-function component() {
-  const element = document.createElement('div');
-  const btn = document.createElement('button');
+ReactDOM.render(<App />, document.getElementById('root'));
 
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-
-  btn.innerHTML = 'Click me and check the console!';
-  btn.onclick = function () {
-    console.log('hello!');
-  };
-
-  element.appendChild(btn);
-  return element;
-}
-
-document.body.appendChild(component());

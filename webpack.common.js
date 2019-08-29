@@ -18,12 +18,12 @@ module.exports = {
     rules: [
       {
         enforce: 'pre',
-        test: /\.m?js$/,
+        test: /\.(js|jsx)$/,
         exclude: /(node_modules|bower_components)/,
         loader: 'eslint-loader',
       },
       {
-        test: /\.m?js$/,
+        test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/,
         loader: 'babel-loader',
       },
